@@ -3,135 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Anser | Academic Portfolio</title>
+    <title>Ali Anser Jaffri | Academic Portfolio</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333333;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: #fafafa;
+            padding: 30px;
+            background-color: #fcfcfc;
         }
         header {
             text-align: center;
             padding: 40px 0;
             border-bottom: 2px solid #eaeaea;
+            margin-bottom: 30px;
         }
         h1 {
             margin: 0;
             color: #1a1a1a;
-            font-size: 2.5em;
+            font-size: 2.8em;
         }
         p.subtitle {
             font-size: 1.2em;
-            color: #666666;
-            margin: 10px 0 0 0;
+            color: #555555;
+            margin: 10px 0;
+            font-weight: 500;
+        }
+        .contactLinks a {
+            color: #2980b9;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        .contactLinks a:hover {
+            text-decoration: underline;
         }
         section {
             margin: 40px 0;
         }
         h2 {
             color: #2c3e50;
-            border-bottom: 1px solid #eaeaea;
+            border-bottom: 2px solid #3498db;
             padding-bottom: 8px;
+            margin-bottom: 20px;
         }
-        .project-card, .experience-card {
+        h3 {
+            color: #2980b9;
+            margin-bottom: 5px;
+        }
+        .institution {
+            font-style: italic;
+            color: #666666;
+            margin-bottom: 15px;
+        }
+        .contentCard {
             background: #ffffff;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
             margin-bottom: 20px;
         }
-        .tags {
+        ul {
             margin-top: 10px;
+            padding-left: 20px;
         }
-        .tag {
-            background: #eef2f7;
-            color: #34495e;
-            padding: 4px 10px;
-            border-radius: 4px;
+        li {
+            margin-bottom: 8px;
+        }
+        .tagContainer {
+            margin-top: 15px;
+        }
+        .skillTag {
+            background: #ecf0f1;
+            color: #2c3e50;
+            padding: 5px 12px;
+            border-radius: 20px;
             font-size: 0.85em;
-            margin-right: 5px;
+            margin-right: 8px;
+            margin-bottom: 8px;
             display: inline-block;
-        }
-        .links a {
-            color: #3498db;
-            text-decoration: none;
-            margin-right: 15px;
-            font-weight: bold;
-        }
-        .links a:hover {
-            text-decoration: underline;
+            font-weight: 600;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Ali Anser</h1>
-        <p class="subtitle">Computer Science Researcher & Software Engineer</p>
-        <div class="links" style="margin-top: 20px;">
+        <h1>Ali Anser Jaffri</h1>
+        <p class="subtitle">BS in Computer Science | Lahore University of Management Sciences</p>
+        <p class="subtitle">CGPA: 3.91 / 4.00</p>
+        <div class="contactLinks">
+            <a href="mailto:26100201@lums.edu.pk">26100201@lums.edu.pk</a>
+            <a href="https://linkedin.com/in/ali-anser-jaffri" target="_blank">LinkedIn</a>
             <a href="https://github.com/alianserj" target="_blank">GitHub</a>
-            <a href="mailto:your.email@example.com">Email</a>
         </div>
     </header>
 
     <section id="about">
-        <h2>About Me</h2>
+        <h2>Research Interests</h2>
         <p>
-            Welcome to my personal webpage! I am an undergraduate student focused on computer science, 
-            applied mathematics, and computational engineering. My academic interests lie at the intersection 
-            of data driven modeling, dynamical systems, and advanced algorithmic implementations.
+            I am deeply interested in the intersection of Control Theory and Dynamical Machine Learning to analyze stability, learn latent dynamics, and predict critical transitions in complex nonlinear systems. My core focus areas include Data Driven Control, Operator Theoretic Methods specifically Koopman Analysis, and Multi Agent Systems.
         </p>
     </section>
 
     <section id="research">
-        <h2>Research & Thesis</h2>
-        <div class="project-card">
-            <h3>Spatiotemporal System Prediction Using Koopman Operator Theory</h3>
-            <p>
-                Developing mathematical frameworks and utilizing Dynamic Mode Decomposition to analyze continuous 
-                environmental datasets. The core objective involves modeling complex transitions and predicting critical 
-                tipping points in highly non linear natural systems.
-            </p>
-            <div class="tags">
-                <span class="tag">Dynamical Systems</span>
-                <span class="tag">Python</span>
-                <span class="tag">MATLAB</span>
-            </div>
+        <h2>Research Experience</h2>
+        
+        <div class="contentCard">
+            <h3>Senior Thesis: Koopman Operator Theoretic Approaches to Tipping Points</h3>
+            <p class="institution">Advisor: Dr. Abubakr Muhammad | April 2025 to Present</p>
+            <ul>
+                <li>Analyzing the mathematical foundations of critical transitions in the AMOC, focusing on evidence suggesting a potential twenty first century bifurcation.</li>
+                <li>Adapting this framework using Koopman Operator Theory for Glacial Lake Outburst Floods in Pakistan to outperform traditional local variance based statistics in predicting disaster onset.</li>
+            </ul>
+        </div>
+
+        <div class="contentCard">
+            <h3>Undergraduate Research Student: Social Dilemma Bifurcations</h3>
+            <p class="institution">Advisor: Dr. Hassan Jaleel | January 2025 to December 2025</p>
+            <ul>
+                <li>Worked on a mathematical model within Evolutionary Game Theory to capture population dynamics in social settings, incorporating preference falsification into the Prisoner Dilemma.</li>
+                <li>Focused on using bifurcation theory to map the critical parameter thresholds that trigger sudden collapses in cooperative behavior.</li>
+            </ul>
         </div>
     </section>
 
-    <section id="experience">
-        <h2>Academic & Professional Experience</h2>
-        <div class="experience-card">
-            <h3>Undergraduate Teaching Assistant</h3>
-            <p>
-                Assisted faculty in delivering coursework, conducting grading cycles, and hosting recitation sessions 
-                for advanced university modules including Machine Learning, Deep Learning, and Multi Agent Systems.
-            </p>
+    <section id="projects">
+        <h2>Academic Projects</h2>
+
+        <div class="contentCard">
+            <h3>Investigating Attention Based Knowledge Distillation for Transformers</h3>
+            <p>Modeled non stationary distillation dynamics to map BERT latent spaces onto a compressed student model, achieving massive parameter reduction and high accuracy via attention aware regularization.</p>
         </div>
-        <div class="experience-card">
-            <h3>Software Engineering Intern</h3>
-            <p>
-                Contributed to modernizing large scale architectural frameworks by successfully migrating backend 
-                monolith financial software into highly responsive distributed microservices.
-            </p>
-            <div class="tags">
-                <span class="tag">Java</span>
-                <span class="tag">Quarkus</span>
-                <span class="tag">Vue.js</span>
-            </div>
+
+        <div class="contentCard">
+            <h3>Multi Agent Learning for Flying Base Stations</h3>
+            <p>Formulated UAV coordination as a Potential Game utilizing Marginal Contribution Utility to optimize distributed coverage, implementing Log Linear Learning dynamics for theoretical guarantees.</p>
+        </div>
+
+        <div class="contentCard">
+            <h3>Distributed Consensus in Networked Systems</h3>
+            <p>Implemented and tailored the Raft distributed consensus protocol in Golang for autonomous clients with simulated time varying networks as a key value database.</p>
+        </div>
+
+        <div class="contentCard">
+            <h3>Socio Technical System Design for Climate Resilient Operations</h3>
+            <p>Developed a data driven operations model for the flood waste nexus in Karachi amid intensifying climate change rains, adapting the MESSAGEix framework for Technological Regime Shift.</p>
+        </div>
+    </section>
+
+    <section id="teaching">
+        <h2>Teaching Experience</h2>
+        <div class="contentCard">
+            <h3>Undergraduate Teaching Assistant | LUMS</h3>
+            <ul>
+                <li>Advanced Game Theory</li>
+                <li>Deep Learning</li>
+                <li>Machine Learning</li>
+                <li>Advanced Machine Learning</li>
+            </ul>
+            <h3 style="margin-top: 20px;">Teacher | AIMS</h3>
+            <ul>
+                <li>Further Mathematics and Mathematics for Advanced Levels and IGCSE</li>
+            </ul>
         </div>
     </section>
 
     <section id="skills">
         <h2>Technical Skills</h2>
-        <div class="project-card">
-            <p><strong>Languages:</strong> Python, C++, Java, MATLAB, SQL, Go, Haskell</p>
-            <p><strong>Frameworks & Tools:</strong> Git, Quarkus, Vue.js, Linux, LaTeX</p>
+        <div class="contentCard">
+            <p><strong>Languages:</strong> Python, C, C++, MATLAB, SQL, Haskell, Golang</p>
+            <p><strong>Frameworks:</strong> PyTorch, TensorFlow, NumPy, SciPy, Pandas, Scikit learn</p>
+            <p><strong>Tools:</strong> Git, Docker, Linux, LaTeX, Azure</p>
+        </div>
+    </section>
+
+    <section id="awards">
+        <h2>Awards and Honors</h2>
+        <div class="contentCard">
+            <ul>
+                <li>Dean Honor List, LUMS School of Science and Engineering</li>
+                <li>Merit Scholarship, Full Award by Cedar College for academic excellence</li>
+                <li>National Science Talent Contest Scholar, selected among the top mathematics students nationwide to prepare for the International Mathematical Olympiad</li>
+            </ul>
         </div>
     </section>
 
