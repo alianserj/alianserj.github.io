@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ali Anser Jaffri | Researcher &amp; Computer Scientist</title>
+  <meta name="description" content="Portfolio of Ali Anser Jaffri — CS researcher at LUMS focusing on Data-Driven Control, Koopman Analysis, and Multi-Agent Systems.">
+  <meta name="author" content="Ali Anser Jaffri">
+  <meta name="theme-color" content="#0a0a12">
+
+  <!-- Prevent dark-mode flash: apply theme before CSS loads -->
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark-mode');
+      }
+    })();
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================== NAVIGATION ============================== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="navLogo">AAJ</a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Theme toggle -->
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Download CV -->
+        <a id="cvDownload" class="btn-primary btn-cv" download>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Download CV</span>
+        </a>
+      </div>
+
+      <!-- Hamburger (mobile) -->
+      <button id="menuToggle" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================== MAIN CONTENT ============================== -->
+  <main>
+    <section id="hero" class="section hero-section"></section>
+    <section id="about" class="section">
+      <div class="container" id="aboutContent"></div>
+    </section>
+    <section id="experience" class="section">
+      <div class="container" id="experienceContent"></div>
+    </section>
+    <section id="projects" class="section">
+      <div class="container" id="projectsContent"></div>
+    </section>
+    <section id="skills" class="section">
+      <div class="container" id="skillsContent"></div>
+    </section>
+    <section id="awards" class="section">
+      <div class="container" id="awardsContent"></div>
+    </section>
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer id="contact" class="footer-section"></footer>
+
+  <!-- Scripts: data first, then app logic -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
